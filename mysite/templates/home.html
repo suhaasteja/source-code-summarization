@@ -1,0 +1,45 @@
+{% extends 'base.html' %}
+
+{% block content %}
+<html>
+
+<head>
+    <title>Code Editor</title>
+</head>
+<h1><b>Source Code Summarization</b></h1>
+<br>
+<body>
+    <form id="usrForm" action="store">
+        <textarea id="code" name="usrCode" form="usrForm" placeholder="Type your code"></textarea>
+        <textarea readonly id="summary" name="usrSummary" placeholder="summary will be displayed here">{{summary}}</textarea><br>
+        <input type="submit" name="submit code" id="sBtn">
+    </form>
+</body>
+
+</html>
+
+<style>
+    body {
+        text-align: center;
+    }
+
+    textarea {
+        width: 45%;
+        min-height: 500px;
+        overflow: scroll;
+        margin: auto;
+        display: inline-block;
+        background: #f4f4f9;
+        outline: none;
+        font-family: Courier, sans-serif;
+        font-size: 14px;
+    }
+
+    canvas {
+        width: 45%;
+        height: 500px;
+        border: 1px solid black;
+        border-radius: 3px;
+    }
+</style>
+{% endblock %}
