@@ -6,11 +6,11 @@
 <head>
     <title>Code Editor</title>
 </head>
-<h1><b>Source Code Summarization</b></h1>
+<h1><b>Text Summarization</b></h1>
 <br>
 <body>
     <form id="usrForm" action="store">
-        <textarea id="code" name="usrCode" form="usrForm" placeholder="Type your code"></textarea>
+        <textarea id="code" name="usrCode" form="usrForm" placeholder="Type your text">{{userCode}}</textarea>
         <textarea readonly id="summary" name="usrSummary" placeholder="summary will be displayed here">{{summary}}</textarea><br>
         <input type="submit" name="submit code" id="sBtn">
     </form>
